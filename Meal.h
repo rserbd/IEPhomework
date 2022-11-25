@@ -7,7 +7,7 @@ using namespace std;
 
 class Meal
 {
-    private: 
+    protected: 
         string name;
         int calories;
         int proteins;
@@ -15,6 +15,7 @@ class Meal
     public:
         Meal(void); // default constructor
         Meal(string, int, int, bool); // user-defined constructor
+        Meal(const Meal&); // default copy-constructor
         ~Meal(void); // default destructor
 
         void setName(string);

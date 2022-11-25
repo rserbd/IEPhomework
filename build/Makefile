@@ -172,6 +172,33 @@ Breakfast.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Breakfast.cpp.s
 .PHONY : Breakfast.cpp.s
 
+Lunch.o: Lunch.cpp.o
+
+.PHONY : Lunch.o
+
+# target to build an object file
+Lunch.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Lunch.cpp.o
+.PHONY : Lunch.cpp.o
+
+Lunch.i: Lunch.cpp.i
+
+.PHONY : Lunch.i
+
+# target to preprocess a source file
+Lunch.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Lunch.cpp.i
+.PHONY : Lunch.cpp.i
+
+Lunch.s: Lunch.cpp.s
+
+.PHONY : Lunch.s
+
+# target to generate assembly for a file
+Lunch.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Lunch.cpp.s
+.PHONY : Lunch.cpp.s
+
 Meal.o: Meal.cpp.o
 
 .PHONY : Meal.o
@@ -240,6 +267,9 @@ help:
 	@echo "... Breakfast.o"
 	@echo "... Breakfast.i"
 	@echo "... Breakfast.s"
+	@echo "... Lunch.o"
+	@echo "... Lunch.i"
+	@echo "... Lunch.s"
 	@echo "... Meal.o"
 	@echo "... Meal.i"
 	@echo "... Meal.s"

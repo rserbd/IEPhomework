@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/radu/IEP/Meal example/Breakfast.cpp" "/home/radu/IEP/Meal example/build/CMakeFiles/main.dir/Breakfast.cpp.o"
+  "/home/radu/IEP/Meal example/Lunch.cpp" "/home/radu/IEP/Meal example/build/CMakeFiles/main.dir/Lunch.cpp.o"
   "/home/radu/IEP/Meal example/Meal.cpp" "/home/radu/IEP/Meal example/build/CMakeFiles/main.dir/Meal.cpp.o"
   "/home/radu/IEP/Meal example/main.cpp" "/home/radu/IEP/Meal example/build/CMakeFiles/main.dir/main.cpp.o"
   )

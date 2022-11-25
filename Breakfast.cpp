@@ -19,6 +19,15 @@ Breakfast::Breakfast(string n, int c, int p, bool v, bool e, int b):
         cout<<"User-defined Constructor - Derived class Breakfast \n";
     } 
 
+Breakfast::Breakfast(const Breakfast& b): 
+    Meal(b),
+    hasEggs(b.hasEggs),
+    nrBaconSlices(b.nrBaconSlices)
+    {
+        cout<<"Copy-constructor - Derived class Breakfast \n";
+
+    }
+
 Breakfast::~Breakfast() 
     {   
         cout<<"Default Destructor - Derived class Breakfast";

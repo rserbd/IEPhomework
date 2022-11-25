@@ -3,7 +3,7 @@
 using namespace std;
 
 Meal::Meal():
-    name(),
+    name(""),
     calories(0),
     proteins(0),
     isVegetarian(false)
@@ -18,6 +18,15 @@ Meal::Meal(string n, int c, int p, bool v):
     isVegetarian(v)
     {
         cout<<"User-defined Constructor - Base class Meal \n";
+    }
+
+Meal::Meal(const Meal& m) 
+    {
+        name = m.name;
+        calories = m.calories;
+        proteins = m.proteins;
+        isVegetarian = m.isVegetarian;
+        cout<<"Copy-constructor - Base class Meal \n";
     }
 
 Meal::~Meal() 

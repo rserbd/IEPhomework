@@ -13,5 +13,10 @@
   "directory": "/home/radu/IEP/Meal example/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/main.dir/Breakfast.cpp.o -c \"/home/radu/IEP/Meal example/Breakfast.cpp\"",
   "file": "/home/radu/IEP/Meal example/Breakfast.cpp"
+},
+{
+  "directory": "/home/radu/IEP/Meal example/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/main.dir/Lunch.cpp.o -c \"/home/radu/IEP/Meal example/Lunch.cpp\"",
+  "file": "/home/radu/IEP/Meal example/Lunch.cpp"
 }
 ]

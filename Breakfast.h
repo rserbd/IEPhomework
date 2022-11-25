@@ -14,6 +14,7 @@ class Breakfast: public Meal
     public:
         Breakfast(void); // default constructor
         Breakfast(string, int, int, bool, bool, int); // user-defined constructor
+        Breakfast(const Breakfast&); // default copy-constructor
         ~Breakfast(void); // default destructor
 
         void setHasEggs(bool);

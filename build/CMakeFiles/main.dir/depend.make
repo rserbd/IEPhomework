@@ -5,10 +5,15 @@ CMakeFiles/main.dir/Breakfast.cpp.o: ../Breakfast.cpp
 CMakeFiles/main.dir/Breakfast.cpp.o: ../Breakfast.h
 CMakeFiles/main.dir/Breakfast.cpp.o: ../Meal.h
 
+CMakeFiles/main.dir/Lunch.cpp.o: ../Lunch.cpp
+CMakeFiles/main.dir/Lunch.cpp.o: ../Lunch.h
+CMakeFiles/main.dir/Lunch.cpp.o: ../Meal.h
+
 CMakeFiles/main.dir/Meal.cpp.o: ../Meal.cpp
 CMakeFiles/main.dir/Meal.cpp.o: ../Meal.h
 
 CMakeFiles/main.dir/main.cpp.o: ../Breakfast.h
+CMakeFiles/main.dir/main.cpp.o: ../Lunch.h
 CMakeFiles/main.dir/main.cpp.o: ../Meal.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 
