@@ -1,5 +1,5 @@
+/home/radu/IEP/Meal example/build/CMakeFiles/edit_cache.dir
 /home/radu/IEP/Meal example/build/CMakeFiles/package_source.dir
 /home/radu/IEP/Meal example/build/CMakeFiles/rebuild_cache.dir
 /home/radu/IEP/Meal example/build/CMakeFiles/package.dir
-/home/radu/IEP/Meal example/build/CMakeFiles/edit_cache.dir
-/home/radu/IEP/Meal example/build/CMakeFiles/mealsProject.dir
+/home/radu/IEP/Meal example/build/CMakeFiles/main.dir

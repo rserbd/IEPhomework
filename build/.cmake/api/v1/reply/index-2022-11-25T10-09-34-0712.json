@@ -25,7 +25,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-1699a0525be8bce87db9.json",
+			"jsonFile" : "codemodel-v2-628b0ad1a5e3f1c648f0.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -39,6 +39,15 @@
 			"version" : 
 			{
 				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-d7b406c530c5020455e7.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
 				"minor" : 0
 			}
 		}
@@ -62,6 +71,10 @@
 					{
 						"kind" : "toolchains",
 						"version" : 1
+					},
+					{
+						"kind" : "cmakeFiles",
+						"version" : 1
 					}
 				],
 				"responses" : 
@@ -76,7 +89,7 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-1699a0525be8bce87db9.json",
+						"jsonFile" : "codemodel-v2-628b0ad1a5e3f1c648f0.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -86,6 +99,15 @@
 					},
 					{
 						"error" : "unknown request kind 'toolchains'"
+					},
+					{
+						"jsonFile" : "cmakeFiles-v1-d7b406c530c5020455e7.json",
+						"kind" : "cmakeFiles",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 0
+						}
 					}
 				]
 			}

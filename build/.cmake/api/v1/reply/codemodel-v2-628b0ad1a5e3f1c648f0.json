@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "mealsProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mealsProject-Debug-c709ad9762d2642aaf6c.json",
-					"name" : "mealsProject",
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-92843aabada47e4ec362.json",
+					"name" : "main",
 					"projectIndex" : 0
 				}
 			]

@@ -6,21 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/radu/IEP/Meal example/Breakfast.h
-Meal.h
-/home/radu/IEP/Meal example/Meal.h
-iostream
--
-
-/home/radu/IEP/Meal example/Meal.h
-iostream
--
-
-/home/radu/IEP/Meal example/main.cpp
-iostream
--
+/home/radu/IEP/Meal example/Breakfast.cpp
 Meal.h
 /home/radu/IEP/Meal example/Meal.h
 Breakfast.h
 /home/radu/IEP/Meal example/Breakfast.h
+
+/home/radu/IEP/Meal example/Breakfast.h
+Meal.h
+/home/radu/IEP/Meal example/Meal.h
+iostream
+-
+
+/home/radu/IEP/Meal example/Meal.cpp
+Meal.h
+/home/radu/IEP/Meal example/Meal.h
+
+/home/radu/IEP/Meal example/Meal.h
+iostream
+-
 

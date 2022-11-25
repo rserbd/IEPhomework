@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = "/home/radu/IEP/Meal example/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
@@ -88,17 +99,6 @@ package: preinstall
 package/fast: package
 
 .PHONY : package/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -133,17 +133,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mealsProject
+# Target rules for targets named main
 
 # Build rule for target.
-mealsProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mealsProject
-.PHONY : mealsProject
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-mealsProject/fast:
-	$(MAKE) -f CMakeFiles/mealsProject.dir/build.make CMakeFiles/mealsProject.dir/build
-.PHONY : mealsProject/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+Breakfast.o: Breakfast.cpp.o
+
+.PHONY : Breakfast.o
+
+# target to build an object file
+Breakfast.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Breakfast.cpp.o
+.PHONY : Breakfast.cpp.o
+
+Breakfast.i: Breakfast.cpp.i
+
+.PHONY : Breakfast.i
+
+# target to preprocess a source file
+Breakfast.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Breakfast.cpp.i
+.PHONY : Breakfast.cpp.i
+
+Breakfast.s: Breakfast.cpp.s
+
+.PHONY : Breakfast.s
+
+# target to generate assembly for a file
+Breakfast.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Breakfast.cpp.s
+.PHONY : Breakfast.cpp.s
+
+Meal.o: Meal.cpp.o
+
+.PHONY : Meal.o
+
+# target to build an object file
+Meal.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Meal.cpp.o
+.PHONY : Meal.cpp.o
+
+Meal.i: Meal.cpp.i
+
+.PHONY : Meal.i
+
+# target to preprocess a source file
+Meal.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Meal.cpp.i
+.PHONY : Meal.cpp.i
+
+Meal.s: Meal.cpp.s
+
+.PHONY : Meal.s
+
+# target to generate assembly for a file
+Meal.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Meal.cpp.s
+.PHONY : Meal.cpp.s
 
 main.o: main.cpp.o
 
@@ -151,7 +205,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/mealsProject.dir/build.make CMakeFiles/mealsProject.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -160,7 +214,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/mealsProject.dir/build.make CMakeFiles/mealsProject.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -169,7 +223,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/mealsProject.dir/build.make CMakeFiles/mealsProject.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,11 +232,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... package"
-	@echo "... edit_cache"
-	@echo "... mealsProject"
+	@echo "... main"
+	@echo "... Breakfast.o"
+	@echo "... Breakfast.i"
+	@echo "... Breakfast.s"
+	@echo "... Meal.o"
+	@echo "... Meal.i"
+	@echo "... Meal.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
