@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/radu/IEP/Meal example/Breakfast.cpp
+Meal.h
+/home/radu/IEP/Meal example/Meal.h
+Breakfast.h
+/home/radu/IEP/Meal example/Breakfast.h
+
 /home/radu/IEP/Meal example/Breakfast.h
 Meal.h
 /home/radu/IEP/Meal example/Meal.h
 iostream
 -
-
-/home/radu/IEP/Meal example/Lunch.cpp
-Meal.h
-/home/radu/IEP/Meal example/Meal.h
-Lunch.h
-/home/radu/IEP/Meal example/Lunch.h
 
 /home/radu/IEP/Meal example/Lunch.h
 Meal.h

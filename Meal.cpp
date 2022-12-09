@@ -29,6 +29,21 @@ Meal::Meal(const Meal& m)
         cout<<"Copy-constructor - Base class Meal \n";
     }
 
+Meal &Meal::operator=(const Meal& meal)
+    {
+        if(this == &meal) {
+            cout<<"Object meal is assigned to itself \n";
+            return *this;
+        }
+        name = meal.name;
+        calories = meal.calories;
+        proteins = meal.proteins;
+        isVegetarian = meal.isVegetarian;
+
+        cout<<"Copy assignment operator - Base class Meal \n";
+        return *this;
+    }
+
 Meal::~Meal() 
     {
         cout<<"Default Destructor - Base class Meal \n";

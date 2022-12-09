@@ -28,9 +28,18 @@ Breakfast::Breakfast(const Breakfast& b):
 
     }
 
+Breakfast &Breakfast::operator=(const Breakfast &breakfast)
+    {
+        Meal::operator=(breakfast);
+        hasEggs = breakfast.hasEggs;
+        nrBaconSlices = breakfast.nrBaconSlices;
+        cout<<"Copy assignment operator - Derived class Breakfast \n";
+        return *this;
+    }
+
 Breakfast::~Breakfast() 
     {   
-        cout<<"Default Destructor - Derived class Breakfast";
+        cout<<"Default Destructor - Derived class Breakfast \n";
     }  
 
 void Breakfast::setHasEggs(bool e) { hasEggs = e; }

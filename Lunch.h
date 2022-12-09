@@ -18,6 +18,6 @@ class Lunch: public Meal
         bool getHasMeat(void);
 
         void viewClassAttributes(void);
-    ~Lunch() = delete;
+    // ~Lunch() = delete;
 };
 #endif
